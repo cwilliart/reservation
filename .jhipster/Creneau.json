@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "reservation",
+            "otherEntityName": "reservation",
+            "relationshipType": "many-to-many",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "creneau"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "heure",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171013122644",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "creneau",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

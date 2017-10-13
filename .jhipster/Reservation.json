@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "reservation"
+        },
+        {
+            "relationshipName": "creneau",
+            "otherEntityName": "creneau",
+            "relationshipType": "many-to-many",
+            "otherEntityField": "heure",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "reservation"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descriptif",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "titre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20171013123810",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "reservation",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

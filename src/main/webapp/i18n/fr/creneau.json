@@ -1,0 +1,22 @@
+{
+    "reservationApp": {
+        "creneau" : {
+            "home": {
+                "title": "Creneaus",
+                "createLabel": "Créer un nouveau Creneau",
+                "createOrEditLabel": "Créer ou éditer un Creneau"
+            },
+            "created": "Un nouveau Creneau a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Creneau avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Creneau avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Creneau {{ id }} ?"
+            },
+            "detail": {
+                "title": "Creneau"
+            },
+            "heure": "Heure",
+            "reservation": "Reservation"
+        }
+    }
+}
