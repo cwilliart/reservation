@@ -4,11 +4,13 @@ import com.codahale.metrics.annotation.Timed;
 import com.mycompany.myapp.domain.Creneau;
 
 import com.mycompany.myapp.repository.CreneauRepository;
+import com.mycompany.myapp.security.AuthoritiesConstants;
 import com.mycompany.myapp.web.rest.util.HeaderUtil;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
@@ -110,6 +112,7 @@ public class CreneauResource {
      */
     @DeleteMapping("/creneaus/{id}")
     @Timed
+    @Secured(AuthoritiesConstants.ADMIN)
     public ResponseEntity<Void> deleteCreneau(@PathVariable Long id) {
         log.debug("REST request to delete Creneau : {}", id);
         creneauRepository.delete(id);
