@@ -2,7 +2,7 @@
     "reservationApp": {
         "creneau" : {
             "home": {
-                "title": "Creneaus",
+                "title": "Créneaux",
                 "createLabel": "Créer un nouveau Creneau",
                 "createOrEditLabel": "Créer ou éditer un Creneau"
             },

@@ -22,8 +22,11 @@
         </dd>
         <dt><span jhiTranslate="reservationApp.reservation.creneau">Creneau</span></dt>
         <dd>
+
             <span *ngFor="let creneau of reservation.creneaus; let last = last">
-                <a [routerLink]="['/creneau', creneau?.id ]">{{creneau.heure}}</a>{{last ? '' : ', '}}
+                <a [routerLink]="['/creneau', creneau?.id ]">{{creneau.heure}} oui</a>{{last ? '' : ', '}}
+        <dt><span jhiTranslate="reservationApp.creneau.heure">Heure</span></dt>
+
             </span>
         </dd>
     </dl>
